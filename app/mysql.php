@@ -1,6 +1,17 @@
 <?php
     //TODO: Conexion SQL
-    class mysql{
-        protected $mysql = [];
-    }
+
+
+    use \mysql;
+
+    class mysql extends \mysql {
+        protected $data = [
+            'host' => '127.0.0.1',
+            'user' => 'root',
+            'password' => '',
+            'dbname' => 'uadeo',
+            'port' => '3306';
+        ]
+    } 
+
 ?>
